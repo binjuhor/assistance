@@ -9,7 +9,7 @@ robot_ear = speech_recognition.Recognizer()
 def assistance_mouth(speak):
     print("Assistance: " + speak)
     robot_mouth = pyttsx3.init()
-    robot_mouth.setProperty('rate', 130)
+    robot_mouth.setProperty('rate', 150)
     voices = robot_mouth.getProperty('voices')
     for voice in voices:
         if voice.languages[0] == u'en_US':
